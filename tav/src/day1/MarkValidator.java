@@ -26,7 +26,7 @@ public class MarkValidator {
 	  return "Grade D"; 
 	}
 	
-	public static boolean validateMarks(int marks)
+	public  boolean validateMarks(int marks)
 	{
 		if(marks<0)
 		{
@@ -41,7 +41,7 @@ public class MarkValidator {
 		 Scanner scanner=new Scanner(System.in);
          System.out.println("Enter Marks");
          int marks=scanner.nextInt();
-         while(MarkValidator.validateMarks(marks))
+         while(markValidator.validateMarks(marks))
          {
         	 System.out.println("Marks is invalid");
         	 System.out.println("Enter valid Marks");
