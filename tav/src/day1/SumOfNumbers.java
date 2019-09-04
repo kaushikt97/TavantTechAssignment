@@ -29,7 +29,7 @@ public class SumOfNumbers {
 	}
 	
 	
-	public static boolean validateNumber(int number)
+	public  boolean validateNumber(int number)
 	{
 		if(number<0)
 		{
@@ -39,12 +39,12 @@ public class SumOfNumbers {
 	}
 	public static void main(String[] args)
 	{
-		
+		SumOfNumbers sumOfNumbers=new SumOfNumbers();
 		 Scanner scanner=new Scanner(System.in);
          System.out.println("Enter First  Positive number");
          int firstNumber=scanner.nextInt();
          
-         while(SumOfNumbers.validateNumber(firstNumber))
+         while(sumOfNumbers.validateNumber(firstNumber))
          {
         	 System.out.println("Number is invalid");
         	 System.out.println("Enter valid  First  number");
@@ -55,13 +55,13 @@ public class SumOfNumbers {
          int secondNumber=scanner.nextInt();
          
          
-         while(SumOfNumbers.validateNumber(secondNumber))
+         while(sumOfNumbers.validateNumber(secondNumber))
          {
         	 System.out.println("Number is invalid");
         	 System.out.println("Enter valid Second  number");
         	 secondNumber=scanner.nextInt();
          }
-         SumOfNumbers sumOfNumbers=new SumOfNumbers();
+         
          System.out.println("Sum Of Odd Numbers="+sumOfNumbers.sumOfOddNumbers(firstNumber,secondNumber));
    		 System.out.println("SumOf Even Numbers="+sumOfNumbers.sumOfEvenNumbers(firstNumber,secondNumber));
    		 scanner.close();	
