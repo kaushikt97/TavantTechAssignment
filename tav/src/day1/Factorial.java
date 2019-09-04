@@ -14,7 +14,7 @@ public class Factorial {
     	 
     	 return fact;
      }
-     public static boolean validateNumber(int number)
+     public  boolean validateNumber(int number)
  	{
  		if(number<0)
  		{
@@ -24,17 +24,17 @@ public class Factorial {
  	}
 	public static void main(String[] args) 
 	{
-		
+		 Factorial factorial=new Factorial();  
              Scanner scanner=new Scanner(System.in);
              System.out.println("Enter positive number");
              int number=scanner.nextInt();
-             while(Factorial.validateNumber(number))
+             while(factorial.validateNumber(number))
              {
             	 System.out.println("Number is invalid");
             	 System.out.println("Enter valid number");
             	 number=scanner.nextInt();
              }
-		     Factorial factorial=new Factorial();  
+		    
              System.out.println("Factorial Value="+factorial.calculateFactorial(number));
              scanner.close();
 
